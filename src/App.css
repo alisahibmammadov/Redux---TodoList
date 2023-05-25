@@ -1,16 +1,8 @@
+* {
+  outline: none !important;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -19,20 +11,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App-header h2 {
+  text-shadow: 0 1px 1px orange;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.allTodos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.allTodos button {
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+  border: transparent;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 1px #ccc;
+  background: #f32222;
+  cursor: pointer;
+}
+.singleTodo {
+  border-radius: 50px;
+  margin: 10px 0;
+  background: #5dadf8;
+  padding: 10px 20px;
+  display: flex;
+  width: 450px;
+  align-items: center;
+}
+.todoText {
+  text-align: start;
+  flex: 1;
+}
+
+.form:focus,
+.form:active {
+  outline: none !important;
+  border: transparent;
 }
